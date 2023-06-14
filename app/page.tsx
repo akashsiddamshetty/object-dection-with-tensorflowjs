@@ -36,7 +36,7 @@ const App: FC<pageProps> = ({}) => {
       
       const video = webcamRef.current.video;
       // @ts-expect-error
-
+      
       const videoWidth = webcamRef.current.video.videoWidth;
       // @ts-expect-error
 
@@ -50,7 +50,6 @@ const App: FC<pageProps> = ({}) => {
 
       webcamRef.current.video.height = videoHeight;
 
-      // Set canvas height and width
       // @ts-expect-error
 
       canvasRef.current.width = videoWidth;
@@ -58,7 +57,6 @@ const App: FC<pageProps> = ({}) => {
 
       canvasRef.current.height = videoHeight;
 
-      // 4. TODO - Make Detections
       // @ts-expect-error
 
        const obj = await net.detect(video);
